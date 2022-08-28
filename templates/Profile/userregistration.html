@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <form method="POST">
+
+    {% csrf_token %}
+
+
+      {{ reg_form.as_p }}
+
+         <div>
+                                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
+                                    <span id="payment-button-amount">Add User</span>
+                                </button>
+                            </div>
+    </form>
+
+{% endblock content %}
+
+
